@@ -1,0 +1,94 @@
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.slide-container{
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.imagem-slider{
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .7s;
+}
+.slide-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img{
+  position: relative;
+  width: 240px;
+  height: 370px;
+  transition: .5s;
+  border-radius: 10px;
+}
+.button{
+  position: absolute;
+  width: 240px;
+  height: 370px;
+  transition: .5s;
+}
+#slide-span1:target ~ .imagem-slider #img1,
+#slide-span1:target ~ .imagem-slider #button-1{
+  width: 380px;
+  height: 585px;
+  background-color: transparent;
+}
+#slide-span2:target ~ .imagem-slider #img2,
+#slide-span2:target ~ .imagem-slider #button-2{
+  width: 380px;
+  height: 585px;
+  background-color: transparent;
+}
+#slide-span3:target ~ .imagem-slider #img3,
+#slide-span3:target ~ .imagem-slider #button-3{
+  width: 380px;
+  height: 585px;
+  background-color: transparent;
+}
+#slide-span4:target ~ .imagem-slider #img4,
+#slide-span4:target ~ .imagem-slider #button-4{
+  width: 380px;
+  height: 585px;
+  background-color: transparent;
+}
+#slide-span5:target ~ .imagem-slider #img5,
+#slide-span5:target ~ .imagem-slider #button-5{
+  width: 380px;
+  height: 585px;
+  background-color: transparent;
+}
+#slide-span6:target ~ .imagem-slider #img6,
+#slide-span6:target ~ .imagem-slider #button-6{
+  width: 380px;
+  height: 585px;
+  background-color: transparent;
+}
+#slide-span7:target ~ .imagem-slider #img7,
+#slide-span7:target ~ .imagem-slider #button-7{
+  width: 380px;
+  height: 585px;
+  background-color: transparent;
+}
+#slide-span1:target ~ .imagem-slider {left: 25%;}
+#slide-span2:target ~ .imagem-slider {left: 10%;}
+#slide-span3:target ~ .imagem-slider {left: 15%;}
+
+#slide-span5:target ~ .imagem-slider {left: -15%;}
+#slide-span6:target ~ .imagem-slider {left: -10%;}
+#slide-span7:target ~ .imagem-slider {left: -25%;}
+
