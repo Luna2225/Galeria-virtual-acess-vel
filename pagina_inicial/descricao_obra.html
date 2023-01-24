@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descrição da Obra - Arceble</title>
+
+    <link rel="icon" type="image/png" href="assets/logo/logoarceble copy.png" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/54ae61cac0.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    /* img {
+        margin-top: 1rem;
+    } */
+
+    .obra {
+        margin-top: 5rem;
+    }
+
+    #recomendacao {
+        margin-top: 1rem;
+        
+    }
+
+    .bg {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    #bg {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(218, 216, 216, 0.8);
+        position: fixed;
+        display: none;
+    }
+
+    #bg:target {
+        display: block;
+    }
+
+    #bg:target~.box {
+        top: 150px;
+        transition: all .3s;
+        transition-delay: .2s;
+    }
+
+    .box {
+        width: 260px;
+        height: 305px;
+        position: absolute;
+        /* margin-right: 360px; */
+        left: 40%;
+        right: 40%;
+        top: -410px;
+        background-color: white;
+        border-radius: 5px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .compar {
+        margin-top: 1rem;
+    }
+
+    #close {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        font-size: 30px;
+        position: absolute;
+        /* background-color: black; */
+        width: 50px;
+        /* height: 40px; */
+        text-align: center;
+    }
+
+    #close:hover {
+        opacity: .6;
+    }
+</style>
+
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="index.html" class="nav__logo"><i class="fa-solid fa-arrow-left"></i> ARCEBLE</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link active">HOME</a></li>
+                    <li class="nav__item"><a href="sobre.html" class="nav__link">SOBRE</a></li>
+                    <li class="nav__item"><a href="contato.html" class="nav__link">CONTATO</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">GALERIA</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">EVENTOS</a></li>
+                    <li class="nav__item"><a href="login.html" class="nav__link">LOGIN</a></li>
+                    <li class="nav__item"><a href="cadastro.html" class="nav__link">CADASTRO</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <center>
+            <img src="assets/img/01.jpg" alt="" class="obra" height="300" width="250">
+            <hr>
+
+            <h1>Nome da Obra <a href="#bg"><i class="fa-solid fa-square-share-nodes"></i></a></h1>
+
+            <div id="bg"></div>
+            <div class="box">
+                <h2 class="compar">Compartilhar <a href="" id="close"><i class="fa-solid fa-xmark"></i></a></h2>
+                <hr style="width: 90px;">
+                <div>
+                    <a href="whatsapp://send?text=Nome da obra:%0ahttps://br.freepik.com/fotos/flores"
+                        style="color: darkgreen;"><i class="fa-brands fa-whatsapp fa-3x"></i><br>whatsapp</a><br>
+                    <a href="" style="color: blue;"><i class="fa-brands fa-facebook fa-3x"></i><br>Facebook</a><br>
+                    <a href="" style="color: rgb(129, 39, 151);"><i
+                            class="fa-brands fa-instagram fa-3x"></i><br>Instagram</a>
+                </div>
+            </div>
+
+            <p>Descrição</p>
+            <hr>
+            <h2>Obras Recomendadas</h2>
+            <div class="work__container bd-grid" id="recomendacao">
+                <div class="work__img">
+                    <img src="assets/img/01.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/01.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/01.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/01.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/01.jpg" alt="">
+                </div>
+                <div class="work__img">
+                    <img src="assets/img/01.jpg" alt="">
+                </div>
+            </div>
+        </center>
+    </main>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/funcao.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/script2.js"></script>
+</body>
+
+</html>
