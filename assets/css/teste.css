@@ -354,7 +354,7 @@ img{
 
 /* ===== CONTACT =====*/
 .contact__input{
-  width: 100%;
+  width: 392px;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
@@ -388,11 +388,10 @@ img{
   outline: none;
   font-size: var(--normal-font-size);
   cursor: pointer;
-  background-color: #9D7715;
-  position: absolute;
-  left: 573px;
-  text-align: center;
-  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #9D7715;
+  align-items: center;
 }
 .button2 button{
   display: block;
@@ -405,6 +404,9 @@ img{
   left: 573px;
   text-align: center;
   width: 200px;
+}
+label{
+  font-size: 19px;
 }
 
 /* ===== FOOTER =====*/
