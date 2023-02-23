@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,9 +13,11 @@
     <script src="https://kit.fontawesome.com/54ae61cac0.js" crossorigin="anonymous"></script>
 </head>
 <style>
-    /* img {
-        margin-top: 1rem;
-    } */
+    .img {
+        border-radius: 1rem;
+        height: 500px;
+        width: 500px;
+    }
 
     .obra {
         margin-top: 5rem;
@@ -23,7 +25,7 @@
 
     #recomendacao {
         margin-top: 1rem;
-        
+
     }
 
     .bg {
@@ -102,28 +104,35 @@
                 <a href="index.html" class="nav__logo"><i class="fa-solid fa-arrow-left"></i> ARCEBLE</a>
             </div>
 
-            <div class="nav__menu" id="nav-menu">
+            <!-- <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link active">HOME</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link ">HOME</a></li>
                     <li class="nav__item"><a href="sobre.html" class="nav__link">SOBRE</a></li>
                     <li class="nav__item"><a href="contato.html" class="nav__link">CONTATO</a></li>
-                    <li class="nav__item"><a href="galeria.html" class="nav__link">GALERIA</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">GALERIA</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">EVENTOS</a></li>
                     <li class="nav__item"><a href="login.html" class="nav__link">LOGIN</a></li>
                     <li class="nav__item"><a href="cadastro.html" class="nav__link">CADASTRO</a></li>
                 </ul>
-            </div>
+            </div> -->
 
-            <div class="nav__toggle" id="nav-toggle">
+            <!-- <div class="nav__toggle" id="nav-toggle">
                 <i class="fa-solid fa-bars"></i>
-            </div>
+            </div> -->
         </nav>
     </header>
 
     <main>
         <center>
-            <img src="assets/img/01.jpg" alt="obra" class="obra" height="300" width="250">
+            <img src="assets/img/01.jpg" alt="" class="obra" height="300" width="300"><br>
+            <audio controls autoplay>
+                <source src="audio/yt5s.io - Leão - Marília Mendonça - Decretos Reais 2 (320 kbps).mp3"
+                    type="audio/mpeg">
+            </audio>
             <hr>
+            <!-- <h1>Nome da Obra <a
+                    href="whatsapp://send?text=Obra de fulano de tal: https://br.freepik.com/fotos/flores"><i
+                        class='bx bx-share-alt'></i></a></h1> -->
 
             <h1>Nome da Obra <a href="#bg"><i class="fa-solid fa-square-share-nodes"></i></a></h1>
 
@@ -144,24 +153,25 @@
             <hr>
             <h2>Obras Recomendadas</h2>
             <div class="work__container bd-grid" id="recomendacao">
-                <div class="work__img">
-                    <img src="assets/img/01.jpg" alt="obra">
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/01.jpg" alt="obra">
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/01.jpg" alt="obra">
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/01.jpg" alt="obra">
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/01.jpg" alt="obra">
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/01.jpg" alt="obra">
-                </div>
+                <a href="descricao_obra.html">
+                    <img src="assets/img/01.jpg" alt="" class="img">
+                </a>
+                <a href="descricao_obra.html">
+                    <img src="assets/img/02.jpg" alt="" class="img">
+                </a>
+                <a href="descricao_obra.html">
+                    <img src="assets/img/03.jpg" alt="" class="img">
+                </a>
+
+                <a href="descricao_obra.html">
+                    <img src="assets/img/04.jpg" alt="" class="img">
+                </a>
+                <a href="descricao_obra.html">
+                    <img src="assets/img/05.jpg" alt="" class="img">
+                </a>
+                <a href="descricao_obra.html">
+                    <img src="assets/img/06.jpg" alt="" class="img">
+                </a>
             </div>
         </center>
     </main>
