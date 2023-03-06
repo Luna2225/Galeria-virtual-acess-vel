@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/teste.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header class="l-header">
@@ -21,8 +21,8 @@
                     <li class="nav__item"><a href="contato.html" class="nav__link">CONTATO</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">GALERIA</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">EVENTOS</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link active">LOGIN</a></li>
-                    <li class="nav__item"><a href="cadastro.html" class="nav__link">CADASTRO</a></li>
+                    <li class="nav__item"><a href="login.html" class="nav__link">LOGIN</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link active">CADASTRO</a></li>
                 </ul>
             </div>
 
@@ -31,22 +31,28 @@
             </div>
         </nav>
     </header>
-
     <section class="contact section" id="contact">
         <div class="contact__container bd-grid">
     <form class="contact__form">
-        <h2 class="section-title">Login</h2>
-        <label>O que você é?</label> <br>
-            <select class="input1">
-                <option>Selecione uma opção</option>
-                <option>Artista</option>
-                <option>Anfitrião</option>
-            </select>
-        <input type="email" placeholder="Email:" class="contact__input">
-        <input type="password" placeholder="Senha:" class="contact__input">
-        <input type="button" value="Login" class="button1 button">
+        <h2 class="section-title">Cadastrar Eventos</h2>
+        <input type="text" placeholder="Nome do Evento:" class="input1"><br>
+        <label>Data de inicio</label>
+        <input type="date" placeholder="Data do inicio" class="input1">
+        <label>Data do termino</label>
+        <input type="date" placeholder="Data do termino" class="input1">
+        <br>
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Imagens</label>
+          </div><br>
+          <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Audio</label>
+          </div><br>
+        <label>Descrição do Evento</label><br>
+        <textarea name="" id="" cols="0" rows="10" class="contact__input" required placeholder="Digite aqui"></textarea>
+        <input type="button" value="Cadastrar" class="button1 button">
     </form>
-    <!-- <p>Não tem cadastro?<a href="cadastro.html" class="nav__link">Cadastro</a></p> -->
         </div>
     </section>
 </body>
